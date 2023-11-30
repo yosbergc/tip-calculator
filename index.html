@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+<main>
+  <img src="images/logo.svg" alt="logo" class="logo">
+  <section class="card">
+    <section class="form">
+      <h2>Bill</h2>
+    <div class="billInputContainer">
+      <img src="images/icon-dollar.svg" alt="">
+      <input type="text" class="billAmount">
+    </div>
+    <h2>Select Tip %</h2>
+    <div class="tips">
+      <button class="fivePercent">5%</button>
+      <button class="tenPercent">10%</button>
+      <button class="fifteenPercent">15%</button>
+      <button class="twentyfivePercent">25%</button>
+      <button class="fiftyPercent">50%</button>
+      <input type="number" class="tipCustom" placeholder="Custom">
+    </div>
+    <h2>Number of People</h2>
+    <div class="billInputContainer">
+      <img src="images/icon-person.svg" alt="">
+      <input type="number" value="1" min="1" step="1" class="numberOfPeople">
+    </div>
+    </section>
+    <section class="results">
+      <div class="info">
+        <div class="tipAmount">
+          <div class="partOne">
+            <p>Tip Amount</p>
+            <span>/ person</span>
+          </div>
+          <span class="tipAmountResult">$0.00</span>
+        </div>
+        <div class="total">
+          <div class="partOne">
+            <p>Total</p>
+            <span>/ person</span>
+          </div>
+          <span class="totalResult">$0.00</span>
+        </div>
+      </div>
+      <button class="resetButton">Reset</button>
+    </section>
+  </section>
+</main>
+<script src="main.js"></script>
+</body>
+</html>
